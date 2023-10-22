@@ -1,0 +1,31 @@
+body {
+    background: url(../image/nebuleuses.jpg);
+    background-size: cover; 
+}
+
+.defilement {
+    overflow: hidden;
+    height: 1000%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 25%;
+    margin-top: 10%;
+}
+
+.defilement p {
+    animation: defil 5s linear infinite;
+    white-space: nowrap;
+    margin: 0;
+    font-size: 24px;
+}
+
+@keyframes defil {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(-100%)
+    }
+}

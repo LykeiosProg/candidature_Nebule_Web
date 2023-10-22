@@ -1,0 +1,34 @@
+body{
+    background: url(../image/vers_les_étoiles.jpg);
+    background-size: cover;
+    
+}
+
+.defilement {
+    overflow: hidden;
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto 0;
+    perspective: 900px;
+}
+
+.defilement p{
+    animation: defil 80s linear infinite;
+    white-space: nowrap;
+    margin: 0;
+    font-size: 50px;
+    transform-origin: 50% 50%;
+}
+
+@keyframes defil {
+    from {
+        transform: translateY(100%) translateZ(0) rotateX(60deg);
+    }
+    to {
+        transform: translateY(-100%) translateZ(-2000px) rotateX(60deg);
+    }
+}
+
